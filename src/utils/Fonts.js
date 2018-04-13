@@ -1,0 +1,1 @@
+export const Fonts = { MontSerrat: "Montserrat", MontSerratBold: "Montserrat-Bold" };

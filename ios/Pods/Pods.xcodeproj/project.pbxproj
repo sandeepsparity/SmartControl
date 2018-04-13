@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0134FFDBA7FB414FABD1CD061233EED6 /* Pods-HVAC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A2CA20A9E923D7C6694F0A952F8898 /* Pods-HVAC-dummy.m */; };
+		1F67FC528C6B3894128BFB56EAC42899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
+		34090E8285372DC631E10E82843B8336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		5B0D9BB353216ECC7AE9A09386668AD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
+		9D9EB9D141E4C9331AB47E3D9CA2F506 /* Pods-HVAC-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDEC5BB52C87F104300F184B5A442BD /* Pods-HVAC-tvOS-dummy.m */; };
+		A7ECD1B9DAEC13E5FDC3FC5212DC34F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		D3D879573713CCB350E3E3043C660606 /* Pods-HVAC-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDF2EC994714E7C49BC933BE54159A /* Pods-HVAC-tvOSTests-dummy.m */; };
+		E1F9A829FA715FAE3CB3000BDF3C7409 /* Pods-HVACTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D28A3DD57DB02EF65280E95BE86A9 /* Pods-HVACTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D51F39BF3E8A56E129DD8C51FA50073 /* Pods-HVAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC.debug.xcconfig"; sourceTree = "<group>"; };
+		1EB30C38B72E7BEE3221CA179E63DFCF /* Pods-HVAC-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		21E2A436991E3E7C0E5E6C4A6DFF1D54 /* Pods-HVACTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVACTests.release.xcconfig"; sourceTree = "<group>"; };
+		29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39547F6D9B5B92D571F12E08CFF0C0AC /* Pods-HVAC-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B404DD3680F668543E26A2D101EF192 /* Pods-HVAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC.release.xcconfig"; sourceTree = "<group>"; };
+		3BF217DEA84B537ADDBDEB7500ED1D95 /* Pods-HVAC-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-tvOSTests-resources.sh"; sourceTree = "<group>"; };
+		410137FCD413E1D67F908253B178490F /* Pods-HVACTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HVACTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48D787B497B8094388CA6AA4D3095258 /* libPods-HVAC-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HVAC-tvOS.a"; path = "libPods-HVAC-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		5727714EDD43F86713F9B823844D5AC9 /* Pods-HVAC-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A42287B8A428FD0140A1A30E4B85037 /* Pods-HVAC-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVAC-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		5CDEC5BB52C87F104300F184B5A442BD /* Pods-HVAC-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HVAC-tvOS-dummy.m"; sourceTree = "<group>"; };
+		5E051E4AAABF0F416D118ADB48402907 /* Pods-HVAC-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6685C76EA4A309926FE9F0B784E387B5 /* Pods-HVAC-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-tvOS-resources.sh"; sourceTree = "<group>"; };
+		6B77C7B66BF772BB8DBD8687607BEDD7 /* Pods-HVAC-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HVAC-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BDDF2EC994714E7C49BC933BE54159A /* Pods-HVAC-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HVAC-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		7FC5C617394B28CB728192F61F8BC31E /* Pods-HVAC-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HVAC-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82981FB005A4ED4C556297735FD4ACED /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		87C2799D3BD6286C73EF57FD48C2D8B2 /* Pods-HVAC-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVAC-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		91A2CA20A9E923D7C6694F0A952F8898 /* Pods-HVAC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HVAC-dummy.m"; sourceTree = "<group>"; };
+		92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94CFB33F32349E87A591D895DB7759A5 /* libPods-HVAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HVAC.a"; path = "libPods-HVAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F90A99B86EE920CE91219A6B342C2E /* Pods-HVAC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVAC-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D25DD3BA9A61262B8C45897D635E7BA /* Pods-HVACTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVACTests-resources.sh"; sourceTree = "<group>"; };
+		A45C1753ED831D8ED6D4EB53EA92EF0D /* libPods-HVAC-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HVAC-tvOSTests.a"; path = "libPods-HVAC-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		BA47B6411405EC4D5AF0960B741CE683 /* Pods-HVAC-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		C091446BDFE78FB1FAEC2C32E9ED7690 /* Pods-HVACTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVACTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C67C552BE444CCC04FA4E199A033AC55 /* Pods-HVAC-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HVAC-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C91D28A3DD57DB02EF65280E95BE86A9 /* Pods-HVACTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HVACTests-dummy.m"; sourceTree = "<group>"; };
+		CC1421C78334C056533EC50670E4CDDC /* Pods-HVACTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVACTests-frameworks.sh"; sourceTree = "<group>"; };
+		D7F38769C420237404AA66D355F09A6A /* Pods-HVAC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-resources.sh"; sourceTree = "<group>"; };
+		DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		DD6F3578A474DFF8F4AB46DAE4872518 /* Pods-HVAC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HVAC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFAD6D7BEDC92DBADC9A6523A8A8E73C /* Pods-HVACTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HVACTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		EEA370F5CF332FF2939F5CB766938A14 /* Pods-HVAC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HVAC-frameworks.sh"; sourceTree = "<group>"; };
+		F1DB0E9AB5FD0921917691328283CAA8 /* libPods-HVACTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HVACTests.a"; path = "libPods-HVACTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46497B75D0AD64856E83D3C8209A7CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34090E8285372DC631E10E82843B8336 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49319C0264BCD35E0B2A33C0CE666EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7ECD1B9DAEC13E5FDC3FC5212DC34F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2F25CF9978043B6703FB47795CB728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0D9BB353216ECC7AE9A09386668AD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63ACBB240AF2FBDC56245480CB1649A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F67FC528C6B3894128BFB56EAC42899 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DECF7299F0875E9BCB9492390207331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */,
+				D479A0301687E2A8F6F67D392B8551D2 /* Fabric */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20F731AE46C73F232AF0C168DC383CF9 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		26F9D6AB1F30C869A5F58AF8EF5A99C8 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				5B0AC4555A08701A9F1760172610E0AF /* ANSCompatibility.h */,
+				A61E08527EFC3DBEDD4BFA0B5C45104C /* Answers.h */,
+				8DB331D62E03B90D571016097AB0A7E0 /* CLSAttributes.h */,
+				29DE526E5B1D3B37719460B12B391B91 /* CLSLogging.h */,
+				856A7EF81F93DD33C78FA7140067110C /* CLSReport.h */,
+				DBA48C54AB315A7317F3DD387EF04883 /* CLSStackFrame.h */,
+				200C81134ACADBF4B01AF7F1C51DE9EC /* Crashlytics.h */,
+				E268B07786115FF5D5DFF396150E695F /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		2DDA681774534EB985F60A3418A4C908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92972CC1C216B42A9AB4B6EABB27FC16 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31EAD9E6BE9EE3F232AD8B11038A18C2 /* Pods-HVACTests */ = {
+			isa = PBXGroup;
+			children = (
+				410137FCD413E1D67F908253B178490F /* Pods-HVACTests-acknowledgements.markdown */,
+				DFAD6D7BEDC92DBADC9A6523A8A8E73C /* Pods-HVACTests-acknowledgements.plist */,
+				C91D28A3DD57DB02EF65280E95BE86A9 /* Pods-HVACTests-dummy.m */,
+				CC1421C78334C056533EC50670E4CDDC /* Pods-HVACTests-frameworks.sh */,
+				9D25DD3BA9A61262B8C45897D635E7BA /* Pods-HVACTests-resources.sh */,
+				C091446BDFE78FB1FAEC2C32E9ED7690 /* Pods-HVACTests.debug.xcconfig */,
+				21E2A436991E3E7C0E5E6C4A6DFF1D54 /* Pods-HVACTests.release.xcconfig */,
+			);
+			name = "Pods-HVACTests";
+			path = "Target Support Files/Pods-HVACTests";
+			sourceTree = "<group>";
+		};
+		58996781A54EE964D7111D73083A18A5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61BBB0670AE3A4B35102B202E9DFAD05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94CFB33F32349E87A591D895DB7759A5 /* libPods-HVAC.a */,
+				48D787B497B8094388CA6AA4D3095258 /* libPods-HVAC-tvOS.a */,
+				A45C1753ED831D8ED6D4EB53EA92EF0D /* libPods-HVAC-tvOSTests.a */,
+				F1DB0E9AB5FD0921917691328283CAA8 /* libPods-HVACTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		722D9D662752E6545748E1669A908232 /* Pods-HVAC */ = {
+			isa = PBXGroup;
+			children = (
+				DD6F3578A474DFF8F4AB46DAE4872518 /* Pods-HVAC-acknowledgements.markdown */,
+				99F90A99B86EE920CE91219A6B342C2E /* Pods-HVAC-acknowledgements.plist */,
+				91A2CA20A9E923D7C6694F0A952F8898 /* Pods-HVAC-dummy.m */,
+				EEA370F5CF332FF2939F5CB766938A14 /* Pods-HVAC-frameworks.sh */,
+				D7F38769C420237404AA66D355F09A6A /* Pods-HVAC-resources.sh */,
+				0D51F39BF3E8A56E129DD8C51FA50073 /* Pods-HVAC.debug.xcconfig */,
+				3B404DD3680F668543E26A2D101EF192 /* Pods-HVAC.release.xcconfig */,
+			);
+			name = "Pods-HVAC";
+			path = "Target Support Files/Pods-HVAC";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A42F72DC1D780481325DD00969B19BB6 /* Frameworks */,
+				1DECF7299F0875E9BCB9492390207331 /* Pods */,
+				61BBB0670AE3A4B35102B202E9DFAD05 /* Products */,
+				C4360ACAD7C03CB721B46BB20D23B9B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A42F72DC1D780481325DD00969B19BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58996781A54EE964D7111D73083A18A5 /* iOS */,
+				20F731AE46C73F232AF0C168DC383CF9 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42FDC76F2A4DDAB462A18D243D0F047 /* Pods-HVAC-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				6B77C7B66BF772BB8DBD8687607BEDD7 /* Pods-HVAC-tvOS-acknowledgements.markdown */,
+				87C2799D3BD6286C73EF57FD48C2D8B2 /* Pods-HVAC-tvOS-acknowledgements.plist */,
+				5CDEC5BB52C87F104300F184B5A442BD /* Pods-HVAC-tvOS-dummy.m */,
+				5727714EDD43F86713F9B823844D5AC9 /* Pods-HVAC-tvOS-frameworks.sh */,
+				6685C76EA4A309926FE9F0B784E387B5 /* Pods-HVAC-tvOS-resources.sh */,
+				1EB30C38B72E7BEE3221CA179E63DFCF /* Pods-HVAC-tvOS.debug.xcconfig */,
+				C67C552BE444CCC04FA4E199A033AC55 /* Pods-HVAC-tvOS.release.xcconfig */,
+			);
+			name = "Pods-HVAC-tvOS";
+			path = "Target Support Files/Pods-HVAC-tvOS";
+			sourceTree = "<group>";
+		};
+		C4360ACAD7C03CB721B46BB20D23B9B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				722D9D662752E6545748E1669A908232 /* Pods-HVAC */,
+				C42FDC76F2A4DDAB462A18D243D0F047 /* Pods-HVAC-tvOS */,
+				EFFC7A9E9E317B7696E07E41470F971A /* Pods-HVAC-tvOSTests */,
+				31EAD9E6BE9EE3F232AD8B11038A18C2 /* Pods-HVACTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D479A0301687E2A8F6F67D392B8551D2 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				494C290BDBEAED23BA5743A3CE2FA0D1 /* FABAttributes.h */,
+				82981FB005A4ED4C556297735FD4ACED /* Fabric.h */,
+				2DDA681774534EB985F60A3418A4C908 /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		E268B07786115FF5D5DFF396150E695F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC88243AB9F702F3015F7068842116A /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFFC7A9E9E317B7696E07E41470F971A /* Pods-HVAC-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FC5C617394B28CB728192F61F8BC31E /* Pods-HVAC-tvOSTests-acknowledgements.markdown */,
+				5A42287B8A428FD0140A1A30E4B85037 /* Pods-HVAC-tvOSTests-acknowledgements.plist */,
+				7BDDF2EC994714E7C49BC933BE54159A /* Pods-HVAC-tvOSTests-dummy.m */,
+				BA47B6411405EC4D5AF0960B741CE683 /* Pods-HVAC-tvOSTests-frameworks.sh */,
+				3BF217DEA84B537ADDBDEB7500ED1D95 /* Pods-HVAC-tvOSTests-resources.sh */,
+				39547F6D9B5B92D571F12E08CFF0C0AC /* Pods-HVAC-tvOSTests.debug.xcconfig */,
+				5E051E4AAABF0F416D118ADB48402907 /* Pods-HVAC-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-HVAC-tvOSTests";
+			path = "Target Support Files/Pods-HVAC-tvOSTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DB387383BA965876194D55E805EA662 /* Pods-HVAC-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B57504593EDB0632E3D37417C0A5A6 /* Build configuration list for PBXNativeTarget "Pods-HVAC-tvOSTests" */;
+			buildPhases = (
+				D7C6E11124BE75B3D21D649A11665C82 /* Sources */,
+				E63ACBB240AF2FBDC56245480CB1649A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HVAC-tvOSTests";
+			productName = "Pods-HVAC-tvOSTests";
+			productReference = A45C1753ED831D8ED6D4EB53EA92EF0D /* libPods-HVAC-tvOSTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		222119B1B5572AF74B243312B314060E /* Pods-HVACTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAAE69863685BE8F6621119AB97B7A5 /* Build configuration list for PBXNativeTarget "Pods-HVACTests" */;
+			buildPhases = (
+				8A3A5936A95F785FCE47A596246714BE /* Sources */,
+				46497B75D0AD64856E83D3C8209A7CE4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HVACTests";
+			productName = "Pods-HVACTests";
+			productReference = F1DB0E9AB5FD0921917691328283CAA8 /* libPods-HVACTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ACA05C99CADCE1748C7949B386492CD9 /* Pods-HVAC-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1887F9000FBB5BC1D17C63522F27F95D /* Build configuration list for PBXNativeTarget "Pods-HVAC-tvOS" */;
+			buildPhases = (
+				B1D6F409A86125162DC0E1218EA7F81D /* Sources */,
+				9A2F25CF9978043B6703FB47795CB728 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HVAC-tvOS";
+			productName = "Pods-HVAC-tvOS";
+			productReference = 48D787B497B8094388CA6AA4D3095258 /* libPods-HVAC-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2FC999660821EA5D8DCCE5B257BDEA7 /* Pods-HVAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D59EB2B00F4F258FB71CBF92F72229B7 /* Build configuration list for PBXNativeTarget "Pods-HVAC" */;
+			buildPhases = (
+				F05158929B133CB6A75131C25CBD2000 /* Sources */,
+				49319C0264BCD35E0B2A33C0CE666EAE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HVAC";
+			productName = "Pods-HVAC";
+			productReference = 94CFB33F32349E87A591D895DB7759A5 /* libPods-HVAC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 61BBB0670AE3A4B35102B202E9DFAD05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2FC999660821EA5D8DCCE5B257BDEA7 /* Pods-HVAC */,
+				ACA05C99CADCE1748C7949B386492CD9 /* Pods-HVAC-tvOS */,
+				0DB387383BA965876194D55E805EA662 /* Pods-HVAC-tvOSTests */,
+				222119B1B5572AF74B243312B314060E /* Pods-HVACTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3A5936A95F785FCE47A596246714BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F9A829FA715FAE3CB3000BDF3C7409 /* Pods-HVACTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D6F409A86125162DC0E1218EA7F81D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D9EB9D141E4C9331AB47E3D9CA2F506 /* Pods-HVAC-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C6E11124BE75B3D21D649A11665C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D879573713CCB350E3E3043C660606 /* Pods-HVAC-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F05158929B133CB6A75131C25CBD2000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0134FFDBA7FB414FABD1CD061233EED6 /* Pods-HVAC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BBE80C18EEB39B66D03F4B1C2B58BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B404DD3680F668543E26A2D101EF192 /* Pods-HVAC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A15F2823E31A3210FE31A7B90D32B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		22DFB4CA7D941ABD88C3BFCC96DF3E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E2A436991E3E7C0E5E6C4A6DFF1D54 /* Pods-HVACTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28D73A2193EAE7569F5368A85C58E5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67C552BE444CCC04FA4E199A033AC55 /* Pods-HVAC-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E60EC7A0C5687CF44BEC2A8C145260D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D51F39BF3E8A56E129DD8C51FA50073 /* Pods-HVAC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A485195E3407E8392BFC081CE8530B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		69B8D0E95281D03D2CBA5772EC701193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E051E4AAABF0F416D118ADB48402907 /* Pods-HVAC-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8C7C387B01F7B1569F5ABADC5F79ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C091446BDFE78FB1FAEC2C32E9ED7690 /* Pods-HVACTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C55CF331C7E5C755CC983CFCBDB0B5FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39547F6D9B5B92D571F12E08CFF0C0AC /* Pods-HVAC-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		E275C2D557CF5A9A4C841272AAD0BC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB30C38B72E7BEE3221CA179E63DFCF /* Pods-HVAC-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FAAE69863685BE8F6621119AB97B7A5 /* Build configuration list for PBXNativeTarget "Pods-HVACTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C7C387B01F7B1569F5ABADC5F79ABD /* Debug */,
+				22DFB4CA7D941ABD88C3BFCC96DF3E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1887F9000FBB5BC1D17C63522F27F95D /* Build configuration list for PBXNativeTarget "Pods-HVAC-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E275C2D557CF5A9A4C841272AAD0BC91 /* Debug */,
+				28D73A2193EAE7569F5368A85C58E5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A15F2823E31A3210FE31A7B90D32B8F /* Debug */,
+				39A485195E3407E8392BFC081CE8530B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B57504593EDB0632E3D37417C0A5A6 /* Build configuration list for PBXNativeTarget "Pods-HVAC-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55CF331C7E5C755CC983CFCBDB0B5FA /* Debug */,
+				69B8D0E95281D03D2CBA5772EC701193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D59EB2B00F4F258FB71CBF92F72229B7 /* Build configuration list for PBXNativeTarget "Pods-HVAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E60EC7A0C5687CF44BEC2A8C145260D /* Debug */,
+				0BBE80C18EEB39B66D03F4B1C2B58BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

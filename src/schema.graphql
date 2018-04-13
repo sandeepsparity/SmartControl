@@ -1,0 +1,136 @@
+type LightingDevice {
+  groups: [Int]
+  id: Int
+  intensity: Float
+  name: String
+  scenes: [Int]
+}
+
+type LightingGroup {
+  id: Int
+  intensity: Float
+  lights: [Int]
+  name: String
+  scene: Int
+  sensors: [Int]
+}
+
+type LightingScene {
+  fading: Int
+  id: Int
+  intensity: Float
+  name: String
+}
+
+type LightingSensor {
+  groups: [Int]
+  humidity: Float
+  id: Int
+  lux: Float
+  motion: Int
+  name: String
+  temperature: Float
+}
+
+type Location {
+  group: Int
+  id: Int
+  major: Int
+  micello: Int
+  name: String
+  zone: Int
+}
+
+type Mutation {
+  setLightingGroupIntensity(groupId: Int, intensity: Float): LightingGroup
+  setLightingGroupScene(groupId: Int, sceneId: Int): LightingGroup
+  setTemperatureRequest(id: Int, request: TemperatureRequest): Temperature
+  updateLightingDeviceIntensity(deviceId: Int, intensity: Float): LightingDevice
+  updateLightingDeviceScene(deviceId: Int, sceneId: Int): LightingDevice
+  updateLightingSensor(sensor: LightingSensorInput): LightingSensor
+  updateTemperature(temperature: TemperatureInput): Temperature
+  updateUserLocation(locationId: Int, userId: Int): User
+}
+
+type Query {
+  getLightingDevices: [LightingDevice]
+  getLightingGroups: [LightingGroup]
+  getLightingScenes: [LightingScene]
+  getLightingSensors: [LightingSensor]
+  getLocations: [Location]
+  getTemperatures: [Temperature]
+  getUsers: [User]
+}
+
+type Subscription {
+  onSetLightingGroupIntensity: LightingGroup
+    @aws_subscribe(mutations:["setLightingGroupIntensity"])
+  onSetLightingGroupScene: LightingGroup
+    @aws_subscribe(mutations:["setLightingGroupScene"])
+  onUpdateLightingDeviceIntensity: LightingDevice
+    @aws_subscribe(mutations:["updateLightingDeviceIntensity"])
+  onUpdateLightingDeviceScene: LightingDevice
+    @aws_subscribe(mutations:["updateLightingDeviceScene"])
+  onUpdateLightingSensor: LightingSensor
+    @aws_subscribe(mutations:["updateLightingSensor"])
+  onUpdateTemperature: Temperature
+    @aws_subscribe(mutations:["updateTemperature", "setTemperatureRequest"])
+  onUpdateUserLocation: User
+    @aws_subscribe(mutations:["updateUserLocation"])
+}
+
+type Temperature {
+  id: Int
+  lastRequest: TemperatureRequest
+  lastRequestTimestamp: Int
+  name: String
+  pressure: Float
+  setPoint: Int
+  status: TemperatureStatus
+  temperature: Float
+}
+
+type User {
+  id: Int
+  location: Int
+  name: String
+  type: UserType
+}
+
+enum TemperatureRequest {
+  cool
+  heat
+  off
+}
+
+enum TemperatureStatus {
+  cooling
+  heating
+  none
+  off
+}
+
+enum UserType {
+  laptop
+  person
+  projector
+  tablet
+}
+
+input LightingSensorInput {
+  humidity: Float
+  id: Int
+  lux: Float
+  motion: Int
+  temperature: Float
+}
+
+input TemperatureInput {
+  id: Int
+  lastRequest: TemperatureRequest
+  lastRequestTimestamp: Int
+  pressure: Float
+  setPoint: Int
+  status: TemperatureStatus
+  temperature: Float
+}

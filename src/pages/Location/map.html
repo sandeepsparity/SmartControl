@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0,  user-scalable=no" />
+    <script type="text/javascript" src="https://maps.micello.com/webmap/v0/micellomap.js"></script>
+</head>
+
+<body style="padding: 0; margin: 0; display: flex">
+    <div id="map" class='col-sm-12' style="width: 100%; height: 100vh;"></div>
+    <script type="text/javascript">
+        var micelloMap = (function () {
+            var mapControl, mapData, mapView, markerId = {}, mapQueue = [];
+            var pinImages = {
+                person: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQCBRMeVfrAeAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAABmJLR0QA/wD/AP+gvaeTAAAGL0lEQVRYw81Ye0xTZxSvUbPNJRt/bftjW8z+mPEfmREVUAR5ZXGIRRgIFEp5uE1xqDMgUBB8RDfjtmRmTkmm+Np8gzJ0vqHyUCdFGUoVym0LhSIUaMvDCT075zLKbYuDCwX9kpPvy/edx+9+53HPvQIBzxHzsYtlfX3ZaqcGkdSlPjI9Fmlve9yOXH3s9lwlrtWijFh1lNTlymfxTsPJTvSYykSm5SGgHn3stn5teCo0BW+CBuF60KxIYtct4enQJMnuJx51pPQcyUwKMqUofZtWnAW60BTQBCSC0i8B6rnkv5qdB/eJRxuaDC0x2aCJztzmcEClwkR2LluR6KSN3tKojUgbAsKHUIZkSUeZMJF1e4lwrWNAbp3r83aTOEunCvza3rB3HCgXRYEq9BtoSNoFmqSd7Jr26MyWvyEwCTTiTN3Oeb5O4wYGZ1WCi/6SaQiulkFX2QJThW2C5gMnwfi0FXqgH3rNfSzR2tDSCi05p1keW6Ca5eugRZxde3xpxHTog/GBVISnHFTZgkN3NX1/CExGI5hMJujt7gbZg3r49nQZfHe6HGRV9dDb082eEY92zyG7sFAhyMeoe8zAZMI1gsqIZNcGDHCucqWXBHQ5p8DU28MC6O7qglOyaticWwQZR2Us0frMrUdmOiOeLuRt3n+SleU+pC5sMygi01zL+cbiWV8RO6tWpZxT2jy5dus+MPUMgCNqa++A5IM3LeAGifba2jstfASSZG09oQxLphIkOOcTyfsSp2iEG6wUKj1jwKBtthilG7pTozancm5vkGjvTo0GBm+RyNDYjDok1vGINsgWb3S1EamJqk+/HFLmEw9ajLuu5/8M3UqXCVRNbeaUQ/YAaQ/PWB4L//Nn0PzDYVbXoF4GbVSt2rSON8AnQevlVoGNmWjQaC3GuLd44KLcbAtwf+E9M/f2LLeIOpTcrEYbtWiLt3uxrBi5rmCESWBs09sZJGrvMJjzSmvgx/y7ZqL80keg58Qfl0gHI7Sup6qAdQZebmZiMmegoBVAqmdGfbu9QaMJalRNkPOnHLYck0Em3t6BS3JQqHV4ZrTnRx1sbbQu4EZFdMaMUQMs9hK9YQfw8412ADs6DfBLYUV/+uFikB4Zci+t048Uw74/7kE78tgCZFCXLUCyyS9J/BL0VkqWrQFja5vFUE93l/nXy5UgtYk9LtFZDt4m8g4BRB2ki6ubbPFOkipvSR5j82prLakAU/fAG6L4gRLS8OYy/gcgEfHcqFQOAERZfancKknIxn3vmHzeAAvdgpcwNkVVLZGyZYbibu+Fv0YEN0g/IS/FI8lqUAe3OpCNS+4hHrzA5c5bxs41vnHtVm7G+tV2vRw6DUbYffb2qAHuPnPbTDIky62BRArfONa9x1wC+L+Pq30ke23bJSZ4PRgx8B8yzX2jcbEUk6WGMrqjE2U32LVfZGNMzcKO2YsFNzzCnYdrPNmM1jSCroPNYnPW8VtsrFHmEtE6G/coQZ52Gs0GdSMwIRuGbXSLPSLmbJ/tMfZ2628fSdGwHTK+op4W3GAbBz3eaJVS23/lXi1clddBdX3TQHnBs7aCmyzvcDrk3uKScTet511XflDnn9A/nAFqn9SxGdhKnQD91VKzsbIaDPJq0F8rAx22V3Rm1WJxZf0T+jA53h83wMxZ7lMUfnFFI35z+GLw+8QNkG/8iN8oqLOYdDvkm+To/ICZ+MT8P5ReQKTr5ILADx0C7qDLQMm57y3e4yiApIt0npi/3HGfnwVuwe8q/Vf3OgBg70W3kHcm5KO9fInoq/ECLFkSsWZCwOUtDGLnh76xJWMFh7KlrGsXBk7Mbw9IPiO4vjjMmfH/gjc4krm8KNQZdt2e+P8z5Z6irXwB3vWMypq0X1v5C4OmYw+nGC044j3vGjRdMJmj0D3EuW4UtZF4LruHzplUcD87+7FzhVf0xpEAEg9XZtLGtUVhAsnMOVOxZ2SYF4Cjs7UfOU8l3pc2UmcteAtj7Jmda3FvM54JXuYocFvJzpVLxfGMVUlB1y4VJ3B5Xtp477U3/3tXx/zG6fN+p713X58heCUGZrSgwjNq2hO/+LrHSEVe4dMuuAULXrlxyyPiE5lH+FxH6vwXbXyOGGrmmD8AAAAASUVORK5CYII=",
+                projector: "data:image/png;base64,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",
+                default: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQCBRYFouj90QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAACClBMVEUAAAAICAgKCgoxMTE7Ozs9PT1DQ0NERERKSkpLS0tOTk5PT09RUVFTU1NUVFRVVVVYWFhaWlpoaGhqamqtra3Nzc3a2tr///8AAAA7OzsAAAAuLi4wMDBaWlpeXl5RUVFYWFhcXFx6eno3Nzc/Pz9DQ0NiYmJjY2NoaGhTU1NSUlJUVFRSUlJOTk5LS0tWVlZbW1tVVVVXV1dYWFhZWVlaWlpaWlp6enpycnJ1dXVVVVVUVFR4eHh5eXlfX19eXl5cXFxbW1t1dXVxcXFfX19dXV1dXV13d3d6enpgYGBiYmJ3d3d0dHSAgICBgYFhYWFgYGB0dHR1dXV4eHhiYmJ3d3dhYWFhYWFkZGRkZGRgYGBjY2NjY2Nvb29mZmZ8fHx9fX1lZWVkZGR7e3t6enp8fHxkZGRmZmZkZGRsbGxnZ2dsbGyBgYFnZ2dmZmZmZmZmZmZ9fX1/f3/GxsZeXl5hYWFiYmJkZGRlZWVmZmZnZ2doaGhpaWlqampsbGxtbW1ubm5vb29wcHBxcXFycnJzc3N0dHR1dXV2dnZ3d3d4eHh8fHx9fX2Hh4eIiIiXl5ehoaGioqKqqqqrq6usrKy/v7/AwMDGxsbIyMjNzc3Pz8/U1NTV1dXl5eXn5+fr6+vs7Ozt7e3u7u7x8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr8/PyFUMVDAAAAdHRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQMDAwQEBQUJCg4PEBAQEBYXHB0eIC4uLy8vLzAxNDg4PT5iYmRlaWpsbXKAgoODjZSUn6Ghp6ivr6+wsLHBwcLFxcbP2dzc3eDl6enu7u/y8/P3+Pn8/f39/nzuL+EAAAABYktHRBcL1piPAAACE0lEQVQYGY3BBVtTUQAG4E8xMFDAGqggYGC32IlB2B2ggIpOwMLdnY8xajAJBQEVYwjzbIz6j97x7IFz792G7wtVArAl73jRlctFJ/I2AwmIKf121bt2T3OTp+Nt1c10xHSx0+sWQpBCCLe36xKiSUVuRTsNOipykQqLjc8aqNNq2z5/aqvVqGt8uglmqzMeu0lq3r6hyYmJyT/9bRrJhicb1sCk2E1S9AQCckpA9giS7mIYpR5uJenoD8lpI30Okh+PrIAiBTcEye6QVIx0kxTXkQKFrZnkh0FpMOgg2WyD6qyLdPaMSYOxL07SdQ6qEpKaT5r4NJIlUNhekWzyS5PhJpIvbZiRbSfp9UsTv5ekPRszsuwkW/3SxN9K0p4FRSXJ+mFpMlRPshKqWyS1H0FpEPypkbwD1TGSonNcGox3CpJHoUjEC5LOAWkw4CT5HIugKqSuRQbktMDfFuoKYTD/AHXC4wvJiJDPI6jbMw9Gdxnm+joaDOiCo99cDHsAsx1vGObo6n3/+9f33i4Hw15vh1naPUY4Nc3JiPtpsNglaCF2wiIRBbQowGJYbaumSfVWRHWaJmcQ1VI8pMEjLEFUK/fXUVG3bxViuUDFecSWWcpppZmIY69ghNiNOBYgnxH5WIg4kteWc0r5umTEl1NDXU0OZpGEk9SdQhJmMRdXyWuYg1ktzygrW78M/+PgIVj9AwIDixNNT+UmAAAAAElFTkSuQmCC"
+            }
+            return {
+                mapData: function () {
+                    return mapData;
+                },
+                mapView: function () {
+                    return mapView;
+                },
+                mapLevelId: function () {
+                    return mapData.getCurrentLevel().id;
+                },
+                ready: false,
+                init: function (apiKey, communityId, drawingId, levelId, rotate, theme, callback) {
+                    //Initialize Micello map
+                    micello.maps.init(apiKey, function () {
+                        mapControl = new micello.maps.MapControl('map');
+                        mapData = mapControl.getMapData();
+                        mapView = mapControl.getMapView();
+                        if (rotate) {
+                            mapView.customView = true;
+                            mapView.setBaseAngRad(rotate * Math.PI / 180);
+                        }
+                        if (theme) {
+                            mapControl.getMapCanvas().setOverrideTheme(theme);
+                        }
+                        mapData.loadCommunity(communityId, drawingId, levelId);
+                        if (callback) {
+                            mapData.mapChanged = callback
+                        }
+                    });
+                },
+                clearGeometryOverlay: function () {
+                    if (micelloMap.ready) {
+                        Object.values(markerId).forEach(aid => mapData.removeMarkerOverlay(aid))
+                    }
+                },
+                updateGeometryOverlay: function (geometryId, markerName, markerText, markerImage) {
+                    if (micelloMap.ready) {
+                        //Convert to MX coordinates
+                        var marker = {
+                            "id": geometryId,
+                            "mt": micello.maps.markertype.IMAGE,
+                            "mr": { src: pinImages[markerImage] || pinImages.default, ox: 19, oy: 39 },
+                            "anm": markerName,
+                            "idat": `<div>${markerText}</div>`
+                        };
+                        if (markerId[markerName]) {
+                            //Remove previous marker
+                            mapData.removeMarkerOverlay(markerId[markerName]);
+                        }
+                        //Add new marker
+                        mapData.addMarkerOverlay(marker);
+                        markerId[markerName] = marker.aid;
+                    } else {
+                        mapQueue.push({ method: micelloMap.updateGeometryOverlay, args: arguments })
+                    }
+                },
+                updatePosition: function (latitude, longitude, type) {
+                    if (mapData) {
+                        //Get Current Level
+                        var level = mapData.getCurrentLevel(), mXY = mapData.latLonToMxy(latitude, longitude);
+                        //Convert to MX coordinates
+                        var marker = {
+                            "mx": mXY[0],
+                            "my": mXY[1],
+                            "lid": level.id,
+                            "mt": micello.maps.markertype.NAMED,
+                            "mr": type || "BlueDot",
+                            "anm": "tracking",
+                            "idat": "<div>Me</div>"
+                        };
+                        if (markerId[type]) {
+                            //Remove previous blue dot
+                            mapData.removeMarkerOverlay(markerId[type]);
+                        }
+                        //Add new blue dot
+                        mapData.addMarkerOverlay(marker);
+                        markerId[type] = marker.aid;
+                    }
+                },
+                addMarker: function (mx, my, name) {
+                    var level = mapData.getCurrentLevel();
+                    mapData.addMarkerOverlay({
+                        mx: mx,
+                        my: my,
+                        lid: level.id,
+                        mt: micello.maps.markertype.NAMED,
+                        mr: "GreenPin",
+                        idat: "<div id='pointer'>" + name + "</div>"
+                    });
+                },
+                highlightRoom: function (id) {
+                    if (micelloMap.ready) {
+                        mapData.removeInlay('highlighted_room', true)
+                        if (id) {
+                            mapData.addInlay({ id, t: 'Search Result', anm: 'highlighted_room' })
+                        }
+                    } else {
+                        mapQueue.push({ method: micelloMap.highlightRoom, args: arguments })
+                    }
+                },
+                addLabel: function (id, lr) {
+                    mapData.addInlay({ id, lr, lt: 1, anm: 'additional_labels' })
+                },
+                processQueue: function () {
+                    if (mapQueue.length > 0) {
+                        mapQueue.forEach(mapItem => {
+                            mapItem.method.apply(micelloMap, mapItem.args)
+                        })
+                    }
+                }
+            };
+        }());
+    </script>
+</body>
+
+</html>
